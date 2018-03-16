@@ -1,0 +1,20 @@
+INDEX VERSION 1.127+C:\Users\COCO\Desktop\java-web\test1\.metadata\.plugins\org.eclipse.jdt.core
+3580346938.index
+2387384369.index
+1590817895.index
+2814365298.index
+1817110385.index
+2441536090.index
+42281312.index
+4219279280.index
+1157614203.index
+542156279.index
+1364726300.index
+1026592827.index
+4023430986.index
+4271707543.index
+2778432744.index
+1466570779.index
+1796341947.index
+665391143.index
+3804685890.index
