@@ -1,0 +1,84 @@
+package com.qst.chapter01.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class HelloServlet
+ */
+@WebServlet("/HelloServlet")
+public class HelloServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public HelloServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see Servlet#init(ServletConfig)
+	 */
+	public void init(ServletConfig config) throws ServletException {
+		// TODO Auto-generated method stub
+		System.out.println(this.getClass().getName() + "init()");
+	}
+
+	/**
+	 * @see Servlet#destroy()
+	 */
+	public void destroy() {
+		// TODO Auto-generated method stub
+		System.out.println(this.getClass().getName() + "destroy()");
+	}
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.setContentType("text/html;charset=utf-8");
+		PrintWriter out = response.getWriter();
+		
+
+		      out.write("<html>\r\n");
+		      out.write("  \r\n");
+		      out.write("  <body>\r\n");
+		      out.write("   <from action=\"chapter01/hello\" method=\"post\">\r\n");
+		      out.write("   <p>ÓÃ»§Ãû:<input name=\"username\" type=\"text\"></p>\r\n");
+		      out.write("   <p>ÃÜ&nbsp;Âë:<input name=\"passwrod\" type=\"password\"></p>\r\n");
+		      out.write("   <p><input type=\"submit\" value=\"µÇÂ¼\"></p>\r\n");
+		      out.write("   \r\n");
+		      out.write("   </from>\r\n");
+		      out.write("   \r\n");
+		      out.write("  </body>\r\n");
+		      out.write("</html>\r\n");
+		      
+		      
+		/*out.println("<HTML>");
+		out.println("<HEAD><TITLE>The first Servlet</TITLE></HEAD>");
+		out.println("<BODY>");
+		out.println("Hello Servlet!");
+		out.println("<BODY>");
+		out.println("<HTML>");
+		out.flush();
+		out.close();*/
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+	}
+
+}
